@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_red">#FFFF4401</color>
+    <color name="accent_red_light">#FFFF7341</color>
+    <color name="accent_purple">#FFCA04FC</color>
+    <color name="accent_blue">#FF1A00BD</color>
+</resources>
