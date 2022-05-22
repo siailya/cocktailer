@@ -1,5 +1,6 @@
 package com.overcreated.cocktailer.navigation
 
+import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -9,6 +10,7 @@ import com.overcreated.cocktailer.screens.CocktailsScreen
 import com.overcreated.cocktailer.screens.ProfileScreen
 import com.overcreated.cocktailer.screens.ShakeScreen
 
+@ExperimentalMaterialApi
 @Composable
 fun NavigationGraph(navController: NavHostController) {
     NavHost(navController, startDestination = BottomNavItem.Cocktails.screen_route) {

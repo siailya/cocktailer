@@ -3,6 +3,7 @@ package com.overcreated.cocktailer.navigation
 import android.util.Log
 import androidx.compose.material.BottomNavigationItem
 import androidx.compose.material.Icon
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -10,7 +11,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.overcreated.cocktailer.ui.theme.AccentRed
 
 @Composable
 fun BottomNavigation(navController: NavController) {
@@ -21,7 +21,7 @@ fun BottomNavigation(navController: NavController) {
         BottomNavItem.Profile
     )
     androidx.compose.material.BottomNavigation(
-        backgroundColor = AccentRed,
+        backgroundColor = MaterialTheme.colors.primary,
         contentColor = Color.White
     ) {
         val navBackStackEntry by navController.currentBackStackEntryAsState()

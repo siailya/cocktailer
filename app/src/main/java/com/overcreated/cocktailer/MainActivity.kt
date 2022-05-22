@@ -3,6 +3,7 @@ package com.overcreated.cocktailer
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
@@ -12,6 +13,7 @@ import com.overcreated.cocktailer.navigation.NavigationGraph
 import com.overcreated.cocktailer.navigation.TopNavigation
 import com.overcreated.cocktailer.ui.theme.CocktailerTheme
 
+@ExperimentalMaterialApi
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +26,7 @@ class MainActivity : ComponentActivity() {
 }
 
 
+@ExperimentalMaterialApi
 @Preview(showBackground = true)
 @Composable
 fun MainView() {
